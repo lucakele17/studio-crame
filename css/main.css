@@ -2,6 +2,7 @@ h1 {
   font-family: "legitima", serif;
   font-weight: 500;
   font-style: italic;
+  font-size: 45px;
 }
 
 h2,
@@ -10,7 +11,7 @@ h4 {
   font-family: "legitima", serif;
   font-weight: 500;
   font-style: italic;
-  font-size: larger;
+  font-size: 30px;
 }
 
 * {
@@ -24,6 +25,8 @@ h4 {
   list-style: none;
   display: flex;
   flex-direction: row;
+  padding-left: 0px;
+  padding-right: 10px;
 }
 
 .nav-bar {
@@ -39,12 +42,24 @@ a {
   color: black;
 }
 
+.logo-picture {
+  /* width: 5%; */
+  display: flex;
+
+  /* margin-bottom: 1rem; */
+}
+
 .logo {
-  width: 5%;
+  height: 10rem;
+}
+
+.navigation {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 30px;
+  padding: 0px;
 }
 
 /* MAIN */
@@ -54,8 +69,9 @@ a {
 }
 
 .latest-collection {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-evenly;
 }
 
 .latest-images {
@@ -68,6 +84,7 @@ a {
 
 .studio-interior {
   width: 30%;
+  border-radius: 50%;
 }
 
 .address ul {
