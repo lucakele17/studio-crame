@@ -105,40 +105,61 @@ a {
 
 /* INDIVIDUAL PRODUCT PAGES */
 
-.celia-mug {
-  width: 30%;
-}
-
-.ella-mug {
-  width: 30%;
-}
-
-.agnes-mug {
-  width: 30%;
-}
-
-.astrid-mug {
-  width: 30%;
-}
-
-.celeste-mug {
-  width: 30%;
-}
-
-.flo-mug {
-  width: 30%;
-}
-
-.lia-mug {
-  width: 30%;
-}
-
-.lolly-mug {
-  width: 30%;
-}
-
+.agnes-mug,
+.astrid-mug,
+.celeste-mug,
+.celia-mug,
+.ella-mug,
+.flo-mug,
+.lia-mug,
+.lolly-mug,
 .melba-mug {
-  width: 30%;
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.agnes,
+.astrid,
+.celeste,
+.celia,
+.ella,
+.flo,
+.lia,
+.lolly,
+.melba {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.agnes-description,
+.astrid-description,
+.celeste-description,
+.celia-description,
+.ella-description,
+.flo-description,
+.lia-description,
+.lolly-description,
+.melba-description {
+  padding-right: 5%;
+  align-self: center;
+}
+
+.agnes-description ul,
+.astrid-description ul,
+.celeste-description ul,
+.celia-description ul,
+.ella-description ul,
+.flo-description ul,
+.lia-description ul,
+.lolly-description ul,
+.melba-description ul {
+  list-style: none;
 }
 
 /* FOOTER */
