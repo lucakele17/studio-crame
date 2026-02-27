@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/jet6egx.css" />
     <link rel="stylesheet" href="https://use.typekit.net/jet6egx.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -19,7 +20,7 @@
         </div>
         <nav class="nav-bar">
           <ul>
-            <li><a href="#">Cart</a></li>
+            <li><a href="cart.html">Cart</a></li>
             <li><a href="products.html">Products</a></li>
           </ul>
         </nav>
@@ -49,7 +50,11 @@
               exactly the same. There may be minor differences in color which
               makes them even more special
             </li>
+            <li>Price: 300SEK</li>
           </ul>
+          <div class="add-to-cart-button">
+            <button onclick="addToCart('melba', 300)">Add to Cart</button>
+          </div>
         </div>
       </div>
     </main>
