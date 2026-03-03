@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/jet6egx.css" />
     <script src="js/main.js" defer></script>
   </head>
-  <body>
+  <body onload="listItems()">
     <header>
       <div class="navigation">
         <div class="logo-picture">
@@ -29,6 +29,8 @@
     <main>
       <h1>Shopping cart</h1>
       <p>See the items you've put in your cart here:</p>
+
+      <ul id="cart"></ul>
     </main>
     <footer>
       <div class="footer-text"><p>© Studio Crame</p></div>
