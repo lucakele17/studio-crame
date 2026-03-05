@@ -51,10 +51,7 @@ a {
 }
 
 .logo-picture {
-  /* width: 5%; */
   display: flex;
-
-  /* margin-bottom: 1rem; */
 }
 
 .logo {
@@ -71,26 +68,6 @@ a {
 
 /* MAIN */
 
-#cart {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-}
-
-#cart li {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 @media screen and (min-width: 410px) {
   .product-container {
     display: grid;
@@ -105,62 +82,6 @@ a {
   }
 }
 
-@media screen and (max-width: 410px) {
-  .agnes-mug,
-  .astrid-mug,
-  .celeste-mug,
-  .celia-mug,
-  .ella-mug,
-  .flo-mug,
-  .lia-mug,
-  .lolly-mug,
-  .melba-mug {
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 20%;
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .agnes,
-  .astrid,
-  .celeste,
-  .celia,
-  .ella,
-  .flo,
-  .lia,
-  .lolly,
-  .melba {
-    flex-direction: column;
-  }
-
-  .agnes-description,
-  .astrid-description,
-  .celeste-description,
-  .celia-description,
-  .ella-description,
-  .flo-description,
-  .lia-description,
-  .lolly-description,
-  .melba-description {
-    padding: 0;
-    padding-top: 2rem;
-  }
-
-  .back-to-page {
-    font-size: large;
-  }
-
-  .product-name {
-    font-size: x-large;
-  }
-}
-
 @media screen and (max-width: 1150px) {
   .our-story-container,
   .studio-information-container {
@@ -168,16 +89,22 @@ a {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .studio-interior img,
+  .our-story-picture img {
+    width: 100vw;
+  }
+}
 .wheel-picture {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .wheel-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .welcome,
@@ -210,6 +137,7 @@ a {
 
 .latest-images {
   width: 100%;
+  border-radius: 20%;
 }
 
 .our-story {
@@ -230,9 +158,10 @@ a {
   height: auto;
 }
 
-.our-story-container .our-story-text {
+.our-story-container,
+.our-story-text {
   flex: 1;
-  padding-right: 5%;
+  padding-right: 2%;
 }
 
 .our-story-text p {
@@ -264,6 +193,40 @@ a {
 
 /* PRODUCTS PAGE */
 
+@media screen and (min-width: 410px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .collection-header {
+    font-size: x-large;
+  }
+
+  .collection-paragraph {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .collection-header {
+    font-size: xx-large;
+  }
+
+  .collection-paragraph {
+    font-size: small;
+  }
+}
+
 .product-images {
   width: 100%;
   border-radius: 20%;
@@ -277,15 +240,7 @@ a {
   padding-left: 5%;
 }
 
-.agnes-mug,
-.astrid-mug,
-.celeste-mug,
-.celia-mug,
-.ella-mug,
-.flo-mug,
-.lia-mug,
-.lolly-mug,
-.melba-mug {
+.mug-image {
   display: flex;
   object-fit: cover;
   width: 40%;
@@ -295,15 +250,7 @@ a {
   border-radius: 20%;
 }
 
-.agnes,
-.astrid,
-.celeste,
-.celia,
-.ella,
-.flo,
-.lia,
-.lolly,
-.melba {
+.mug-container {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 5%;
@@ -311,29 +258,13 @@ a {
   align-items: center;
 }
 
-.agnes-description,
-.astrid-description,
-.celeste-description,
-.celia-description,
-.ella-description,
-.flo-description,
-.lia-description,
-.lolly-description,
-.melba-description {
+.mug-description {
   padding-right: 5%;
   align-self: center;
   text-align: center;
 }
 
-.agnes-description ul,
-.astrid-description ul,
-.celeste-description ul,
-.celia-description ul,
-.ella-description ul,
-.flo-description ul,
-.lia-description ul,
-.lolly-description ul,
-.melba-description ul {
+.mug-description ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -349,6 +280,28 @@ a {
   padding-top: 5%;
   display: block;
   padding-left: 8%;
+}
+
+/* CART PAGE */
+
+#cart {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#cart li {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* FOOTER */
